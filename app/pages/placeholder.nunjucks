@@ -1,0 +1,10 @@
+<!--placeholder.nunjucks-->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+            <div id="comingsoon">
+                <h1>THIS PAGE IS COMING SOON</h1>
+            </div>
+            
+{% endblock %}

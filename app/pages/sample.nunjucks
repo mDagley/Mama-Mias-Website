@@ -1,0 +1,18 @@
+<!--sample.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="gallery">
+<!-- Loops through images array -->
+{% for image in images %}
+<div class="gallery_item">
+    <img src="{{image.src}}" alt="{{image.alt}}">
+</div>
+    {% endfor %}
+</div>
+
+{% import 'macros/nav-macro.nunjucks' as nav %}
+
+{{nav.active('home')}}
+
+{% endblock %}

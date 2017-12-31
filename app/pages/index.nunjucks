@@ -1,0 +1,32 @@
+<!--index.nunjucks-->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+            <div id="gallery" class="g1" name="gallery">
+                
+            </div>
+            <div id="gallerynav" class="clearfix">
+            <button class="gallery_nav active" id="image1" onclick="gallerynav(this.id, 'g1')"></button>
+            <button class="gallery_nav" id="image2" onclick="gallerynav(this.id, 'g2')"></button>
+            <button class="gallery_nav" id="image3" onclick="gallerynav(this.id, 'g3')"></button>
+            <button class="gallery_nav" id="image4" onclick="gallerynav(this.id, 'g4')"></button>
+            <!--<button class="gallery_nav" id="image5" onclick="gallerynav(this.id, 'g5')"></button>
+            <button class="gallery_nav" id="image6" onclick="gallerynav(this.id, 'g6')"></button>-->
+            </div>
+            
+            <div id="location_info">
+                <div id="left">
+                    <p>Anna, Tx</p>
+                    <p>(972) 924-2400</p>
+                    <button class="info">MORE INFO</button>
+                </div>
+                
+                <div id="right">
+                     <p>Gunter, TX</p>
+                    <p>(903) 433-1700</p>
+                    <button class="info">MORE INFO</button>
+                </div>
+            
+            </div>
+{% endblock %}

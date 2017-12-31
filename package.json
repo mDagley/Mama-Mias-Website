@@ -1,0 +1,39 @@
+{
+  "name": "mama-mias-website",
+  "version": "1.0.0",
+  "description": "Mama Mia's Pizzeria Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mDagley/Mama-Mias-Website.git"
+  },
+  "keywords": [
+    "mama",
+    "mia",
+    "pizzeria",
+    "pizza",
+    "restaurant",
+    "anna",
+    "tx",
+    "melissa",
+    "dagley"
+  ],
+  "author": "Melissa Dagley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mDagley/Mama-Mias-Website/issues"
+  },
+  "homepage": "https://github.com/mDagley/Mama-Mias-Website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.2.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "nunjucks": "^3.0.1"
+  }
+}
