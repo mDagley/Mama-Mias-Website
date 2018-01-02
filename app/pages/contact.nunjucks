@@ -1,0 +1,36 @@
+<!--Contact.nunjucks-->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div id="contact_form">
+    <h2>CONTACT US</h2>
+    <form id="contact">
+        <input type="text" name="firstName" placeholder="First Name" id="first_name_input" class="medium" autofocus required>
+        <input type="text" name="lastName" placeholder="Last Name" id="last_name_input" class="medium" required>
+        <input type="email" name="email" placeholder="Email Address" id="email_input" class="long" required>
+        <select name="reason" class="short" required>
+            <option selected disabled>Reason For Contact</option>
+            <option value="complaint">Complaint</option>
+            <option value="question">Question</option>
+            <option value="career">Career Opportunities</option>
+            <option value="other">Other</option>
+        </select>
+         <textarea placeholder="Comments..." required></textarea>
+        <input type="submit" value="SUBMIT" id="submit">
+    </form>
+</div>
+<div id="location_info">
+                <div id="left">
+                    <p>Anna, Tx</p>
+                    <p>(972) 924-2400</p>
+                    <button class="info">MORE INFO</button>
+                </div>
+                
+                <div id="right">
+                     <p>Gunter, TX</p>
+                    <p>(903) 433-1700</p>
+                    <button class="info">MORE INFO</button>
+                </div>
+            
+            </div>
+{% endblock %}

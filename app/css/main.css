@@ -91,8 +91,7 @@ nav li a{
 
 nav li a:hover{
     
-    font-weight: 700;
-    font-size: 13px;
+   color: lightgray;
 }
 
 nav a {
@@ -102,7 +101,7 @@ nav a {
 }
 
 .socico{
-    width: 14px;
+    width: 15px;
 }
 
 #fb:hover{
@@ -176,9 +175,7 @@ nav a {
     justify-content: center;
 }
 
-#gnavimg{
-    width: 150px;
-}
+
 
 /*Gallery Navigation */
 
@@ -254,8 +251,7 @@ footer a{
 }
 
 footer a:hover {
-    font-weight: 600;
-    font-size: 14px;
+    color: lightgray;
 }
 
 #footer_content{
@@ -337,6 +333,71 @@ footer a:hover {
 #comingsoon{
     padding-top: 14%;
     padding-bottom: 15%;
+}
+
+/*Contact.html*/
+#contact_form{
+    width: 60%;
+    margin: auto;
+    
+}
+
+
+
+#contact_form #submit{
+    float: right;
+    background-color: #378E21; 
+    color: #fff;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#contact_form #submit:hover{
+    background-color: #46AE2B;
+}
+
+#contact_form input{
+    border: none;
+    margin-bottom: 2.5em;
+    padding: 1%;
+    float: left;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+#contact #first_name_input, #contact #email_input{
+    margin-right: 2%;
+}
+
+select{
+    border: none;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    text-align: left;
+    height: 15em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.medium{
+    width: 49%;
+}
+
+.short{
+    width: 24%;
+}
+
+.long{
+    width: 74%;
 }
 
 
