@@ -286,7 +286,7 @@ footer a:hover {
     line-height: .3;
 }
 
-#email_input{
+#email_input, #newsletter_email_input{
     border:none;
     padding: 6px;
     margin: 0;
@@ -346,15 +346,24 @@ footer a:hover {
 
 #contact_form #submit{
     float: right;
-    background-color: #378E21; 
     color: #fff;
     padding: 10px 0px;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
 }
 
-#contact_form #submit:hover{
+.inactiveSubmit{
+    background-color: #909090;
+    cursor: not-allowed;
+}
+
+.activeSubmit{
+    background-color: #378E21
+}
+
+.activeSubmit:hover{
     background-color: #46AE2B;
+    cursor: pointer;
 }
 
 #contact_form input{
@@ -400,5 +409,15 @@ textarea{
     width: 74%;
 }
 
+#contact .ok {
+    border: 0;
+    border-style: none;
+    box-shadow: 0;
+}
 
+#contact .error {
+     box-shadow: 0 0 5px #871C16;
+ 
+  border: 1px solid #871C16;
+}
 

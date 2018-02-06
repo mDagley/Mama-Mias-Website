@@ -25,7 +25,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type='text/javascript' src="js/gallery.js"></script>
+    
 </head>
     <body>
 
@@ -60,19 +60,19 @@
             
 <div id="contact_form">
     <h2>CONTACT US</h2>
-    <form id="contact">
-        <input type="text" name="firstName" placeholder="First Name" id="first_name_input" class="medium" autofocus required>
-        <input type="text" name="lastName" placeholder="Last Name" id="last_name_input" class="medium" required>
-        <input type="email" name="email" placeholder="Email Address" id="email_input" class="long" required>
-        <select name="reason" class="short" required>
+    <form id="contact" action="send-mail.php" method="POST">
+        <input type="text" name="first_name" placeholder="First Name" id="first_name_input" class="medium" autofocus required data-validation="length" data-validation-length="min1">
+        <input type="text" name="last_name" placeholder="Last Name" id="last_name_input" class="medium" required data-validation="length" data-validation-length="min1"><br />
+        <input type="email" name="email" placeholder="Email Address" id="email_input" class="long" required data-validation="email">
+        <select name="reason" class="short" required id="reason" data-validation="required">
             <option selected disabled>Reason For Contact</option>
             <option value="complaint">Complaint</option>
             <option value="question">Question</option>
             <option value="career">Career Opportunities</option>
             <option value="other">Other</option>
-        </select>
-         <textarea placeholder="Comments..." required></textarea>
-        <input type="submit" value="SUBMIT" id="submit">
+        </select><br />
+         <textarea placeholder="Comments..." name="message" required id="comments" data-validation="length" data-validation-length="min100"></textarea><br />
+        <input type="submit" value="SUBMIT" id="submit" class="active">
     </form>
 </div>
 <div id="location_info">
@@ -89,6 +89,8 @@
                 </div>
             
             </div>
+            
+
 
 
         </div>
@@ -118,7 +120,7 @@
                     <br />
                     <p>Subscribe to our newsletter</p>
                     <form>
-                        <input type="email" name="email" value="Email Address" id="email_input">
+                        <input type="email" name="email" value="Email Address" id="newsletter_email_input">
                         <input type="submit" value="OK" id="ok">
                     </form>
                 </div>
@@ -145,7 +147,15 @@
         </footer>
         </div>
         
-        
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type='text/javascript' src="js/gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>   
+    <!-- Form Validation plugin found at http://www.formvalidator.net/index.html -->
+    <script>
+  $.validate({
+    
+  });
+</script>
     </body>
 
 </html>

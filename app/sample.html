@@ -25,7 +25,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type='text/javascript' src="js/gallery.js"></script>
+    
 </head>
     <body>
 
@@ -110,7 +110,7 @@
                     <br />
                     <p>Subscribe to our newsletter</p>
                     <form>
-                        <input type="email" name="email" value="Email Address" id="email_input">
+                        <input type="email" name="email" value="Email Address" id="newsletter_email_input">
                         <input type="submit" value="OK" id="ok">
                     </form>
                 </div>
@@ -137,7 +137,15 @@
         </footer>
         </div>
         
-        
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type='text/javascript' src="js/gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>   
+    <!-- Form Validation plugin found at http://www.formvalidator.net/index.html -->
+    <script>
+  $.validate({
+    
+  });
+</script>
     </body>
 
 </html>

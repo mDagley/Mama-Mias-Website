@@ -14,7 +14,7 @@ function carousel() {
     var slide = slideIndex+1;
     var class_name= 'g'+slide;
     var gallery_id = document.getElementsByName('gallery');
-      console.log('gallery id: ', gallery_id);
+      //console.log('gallery id: ', gallery_id);
     for(j=0; j < gallery_id.length; j++){
         gallery_id[j].className='';
         gallery_id[j].classList.add(class_name);
