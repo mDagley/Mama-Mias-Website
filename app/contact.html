@@ -41,7 +41,7 @@
             <ul class="nav">
                 <li class="nav"><a href="index.html" class="navbar" >HOME</a></li>
                 <li class="nav"><a href="placeholder.html" class="navbar" >MENU</a></li>
-                <li class="nav"><a href="placeholder.html" class="navbar" >LOCATIONS</a></li>
+                <li class="nav"><a href="locations.html" class="navbar" >LOCATIONS</a></li>
                 <li class="nav"><a href="placeholder.html" class="navbar" >ABOUT</a></li>
                 <li class="nav"><a href="contact.html" class="navbar" >CONTACT</a></li>
             </ul>
@@ -104,7 +104,7 @@
                     <ul>
                         <a href="placeholder.html"><li>Home</li></a>
                         <a href="placeholder.html"><li>Menu</li></a>
-                        <a href="placeholder.html"><li>Locations</li></a>
+                        <a href="locations.html"><li>Locations</li></a>
                     </ul>
                 </div>
                 
@@ -156,6 +156,52 @@
     
   });
 </script>
+
+<script>
+      function initMap() {
+         var latlng = new google.maps.LatLng(33.348901, -96.550318);
+    var latlng2 = new google.maps.LatLng(33.452242, -96.740800);
+
+    var myOptions =
+    {
+        zoom: 19,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var myOptions2 =
+    {
+        zoom: 18,
+        center: latlng2,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+
+    var map = new google.maps.Map(document.getElementById("annaMap"), myOptions);
+
+    var map2 = new google.maps.Map(document.getElementById("gunterMap"), myOptions2);
+
+
+    var myMarker = new google.maps.Marker(
+    {
+        position: latlng,
+        map: map,
+        title:"Anna"
+   });
+
+    var myMarker2 = new google.maps.Marker(
+    {
+        position: latlng2,
+        map: map2,
+        title:"Gunter"
+    });
+
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYgj-TcnEga2OrplXg_SPPE2PhOhO_aJk&callback=initMap">
+    </script>
     </body>
 
 </html>
