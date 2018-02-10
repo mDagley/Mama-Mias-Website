@@ -423,8 +423,11 @@ textarea{
 }
 
 .map {
-        height: 450px;
+        height: 400px;
         width: 100%;
+    -webkit-box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
+-moz-box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
+box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
        }
 .locations, .locations_info {
     width: 60%;
