@@ -1,0 +1,27 @@
+<!--about.nunjucks-->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+            <div id="about" class="clearfix">
+                
+                
+                <div class=" fifty left">
+                <h3>What Makes Mama Mia's Pizza DIFFERENT?</h3>
+                <p>The difference is in the crust and the sauce which is made from scratch daily. Vegetables are hand chopped and the meats that go on your pizza are never greasy because they are 100% quality ingredients. </p>
+                <div class="quote">
+                <blockquote>"Made from scratch daily"</blockquote>
+                </div>
+                <p>The family owned Mama Mia's Pizzeria cares about each and every pizza that is made and wants you to enjoy every bite. That is why everyone that comes to Mama Mia's comes back for more!</p>
+                <img src="img/sauce.jpg" class="left thumbnail">
+                <img src="img/gallery2.jpg" class="left thumbnail">
+                <img src="img/vegetables.jpg" class="left thumbnail">
+                </div>
+                
+                <div class="left article_image">
+                <img src="img/gallery4.jpg" class="left logo">
+                </div>
+                
+            </div>
+            
+{% endblock %}
