@@ -1,0 +1,329 @@
+<!--menu.nunjucks-->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+            <div id="wrap">
+            <h2>MENU</h2>
+            <div id="menu_wrap" class="clearfix">
+            <div id="menu_nav" class="clearfix">
+                <select name="section_select" class="medium" id="section_select">
+                <option selected disabled>MENU SECTION</option>
+                    <option value="#appetizers">APPETIZERS</option>
+                <option value="#salads">SALADS</option>
+                <option value="#sandwiches">SANDWICHES</option>
+                <option value="#pastas">PASTAS</option>
+                <option value="#stromboli">STROMBOLI &amp; CALZONES</option>
+                <option value="#pizza">PIZZA</option>
+                <option value="#specialty_pizza">SPECIALTY PIZZA</option>
+                <option value="#kids">KIDS</option>
+                <option value="#beverages">BEVERAGES</option>
+                <option value="#desserts">DESSERTS</option>
+                </select>
+                <a href="MamaMiaMenu.pdf" target="_blank"><button class="download">DOWNLOAD</button></a>
+            </div>
+            <div id="appetizers" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Appetizers</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Combo Platter</h3>
+                            <p>4 Mozzarella Sticks, 4 Wings, 4 Poppers, 4 Nuggets....<span class="price">$10.99</span></p>
+                            <h3>Cheese Rolls</h3>
+                            <p>Small....<span class="price">$6.99</span> Large....<span class="price">$10.99</span>
+                            Additional Toppings Small....<span class="price">$1.00</span> Large....<span class="price">$1.50</span></p>
+                            <h3>Garlic Cheese Toast</h3>
+                            <p><span class="price">$2.99</span></p>
+                            <h3>Buffalo Wings</h3>
+                            <p>Small(6)....<span class="price">$5.49</span> Large(12)....<span class="price">$9.99</span></p>
+                            <h3>Garlic Breadsticks</h3>
+                            <p>12 sticks....<span class="price">$5.99</span></p>
+                            <h3>Cheesy Garlic Breadsticks</h3>
+                            <p>8 sticks....<span class="price">$6.99</span></p>
+                            <h3>Jalapeno Poppers</h3>
+                            <p>8 pieces....<span class="price">$5.99</span></p>
+                            <h3>Chicken Nuggets</h3>
+                            <p>10 pieces....<span class="price">$5.99</span></p>
+                            <h3>Mozzarella Sticks</h3>
+                            <p>8 pieces....<span class="price">$5.99</span></p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="salads" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Salads</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Dinner Salad</h3>
+                            <p>Small....<span class="price">$2.49</span> Large....<span class="price">$3.49</span></p>
+                            <h3>Grilled Chicken Salad</h3>
+                            <p><span class="price">$6.99</span></p>
+                            <h3>Chef Salad</h3>
+                            <p>With Pepperoni and Canadian Bacon....<span class="price">$6.99</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        <div class=" fifty right menu_section">
+                            <h3>Caesar Salad</h3>
+                            <p>Small....<span class="price">$3.49</span> Large....<span class="price">$4.49</span></p>
+                            <h3>Chicken Caesar Salad</h3>
+                            <p><span class="price">$6.99</span></p>
+                            <p>All salads are served with your choice of dressing: 
+                            Ranch, Light Ranch, Blue Cheese, 1000 Island, Creamy Italian, Honey Mustard, Caesar</p>
+                            <p>*Additional dressing or sauce $0.50</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pastas" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Pastas</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Lasagna</h3>
+                            <p>with or without meat sauce</p>
+                            <h3>Manicoti</h3>
+                            <p></p>
+                            <h3>Chicken Spinach Alfredo</h3>
+                            <p>with fettuccine, grilled chicken, spinach, and mushrooms</p>
+                            <h3>Eggplant Parmesan</h3>
+                            <p></p>
+                            <h3>Spaghetti</h3>
+                            <p>with meat sauce or meatballs</p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+
+                <div id="sandwiches" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Sandwiches</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Hot Ham and Cheese</h3>
+                            <p>Ham, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Pepperoni Sub</h3>
+                            <p>Pepperonia, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Meatball Sub</h3>
+                            <p>Seasoned Meatballs, Mozzarella Cheese, Marinara Sauce</p>
+                            <h3>Submarine Sub</h3>
+                            <p>Pepperoni, Ham, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>All Meat Sub</h3>
+                            <p>Pepperoni, Ham, Beef, Bacon, Sausage, Mozzarella and Cheddar Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Grilled Chicken Sub</h3>
+                            <p>Grilled Chicken, Onion, Bell Pepper, Mushrooms, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Philly Cheese Steak Sub</h3>
+                            <p>Steak, Grilled Onions, Bell Pepper, Mushrooms, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Gyro</h3>
+                            <p>Lamb Meat, Grilled Onions, Cucumbers, Ranch Dressing, Wrapped in Pita Bread</p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="stromboli" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Stromboli &amp; Calzones</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Stromboli</h3>
+                            <p>Stuffed Pizza Crust, Mozzarella Cheese, Sausage, Canadian Bacon, Pepperoni, Beef &#40;Sauce inside&#41;</p>
+                           <h3>Calzone</h3>
+                            <p>Stuffed Pizza Crust, Mozzarella Cheese, Sausage, Canadian Bacon, Pepperoni, Beef &#40;No sauce inside&#41;</p>
+                            <p>Small....<span class="price">$10.49</span> Medium....<span class="price">$12.49</span>
+                            Large....<span class="price">$14.49</span> X-Large....<span class="price">$16.49</span></p>
+                            <img src="img/calzone_banner.jpg">
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="pizza" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Pizza</h2></div>   
+                        
+                </div>
+                    <table id="pizza_price">
+                        <tr>
+                           <td></td> 
+                            <td><h3>SMALL</h3></td>
+                            <td><h3>MEDIUM</h3></td>
+                            <td><h3>LARGE</h3></td>
+                            <td><h3>X-LARGE</h3></td>
+                        </tr>
+                        <tr>
+                           <td><h4>1 TOPPING</h4></td> 
+                            <td>$7.99</td>
+                            <td>$10.49</td>
+                            <td>$12.99</td>
+                            <td>$15.49</td>
+                        </tr>
+                        <tr>
+                           <td><h4>2 TOPPING</h4></td> 
+                            <td>$8.99</td>
+                            <td>$11.49</td>
+                            <td>$13.99</td>
+                            <td>$16.49</td>
+                        </tr>
+                        <tr>
+                           <td><h4>3 TOPPING</h4></td> 
+                            <td>$9.99</td>
+                            <td>$12.49</td>
+                            <td>$14.99</td>
+                            <td>$17.49</td>
+                        </tr>
+                        <tr>
+                            <td><h4>ADDITIONAL</h4></td> 
+                            <td>$1.00</td>
+                            <td>$1.25</td>
+                            <td>$1.50</td>
+                            <td>$1.75</td>
+                        </tr>
+                    </table>
+                    <h2>Toppings</h2>
+                    <table id="pizza_toppings">
+                        <tr>
+                           <td><h3>Sauce</h3></td> 
+                            <td><h3>Cheese</h3></td>
+                            <td><h3>Meat</h3></td>
+                            <td colspan="2"><h3>Vegetables</h3></td>
+                            
+                        </tr>
+                        <tr>
+                           <td>*Alfredo</td> 
+                            <td>Mozzarella</td>
+                            <td>Bacon</td>
+                            <td>Bell Pepper</td>
+                            <td>Green Olives</td>
+                        </tr>
+                        <tr>
+                           <td>*BBQ</td> 
+                            <td>Cheddar</td>
+                            <td>Beef</td>
+                            <td>Spinach</td>
+                            <td>Jalapeno</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Chicken</td>
+                            <td>Onion</td>
+                            <td>Mushroom</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Canadian Bacon</td>
+                            <td>Pineapple</td>
+                            <td>Tomato</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Pepperoni</td>
+                            <td>Sundried Tomatoes</td>
+                            <td>Fresh Garlic</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Sausage</td>
+                            <td>Black Olives</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p>*Indicates two toppings</p>
+                </div>
+                <div id="specialty_pizza" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Specialty Pizza</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Mama's Deluxe &#40;The Works&#41;</h3>
+                            <p>Pepperoni, Canadian Bacon, Beef, Sausage, Green Pepper, Mushroooms, Black Olives, Onion</p>
+                           <h3>Mama's All Meat Combo</h3>
+                            <p>Pepperoni, Bacon, Sausage, Beef, Candian Bacon, Cheddar and Mozzarella Cheese</p>
+                            <h3>Chicken Vegetable Supreme</h3>
+                            <p>Grilled Chicken, Mushrooms, Tomato, Onion, Bell Pepper</p>
+                           <h3>Chicken Alfredo Supreme</h3>
+                            <p>Alfredo Sauce, Grilled Chicken, Tomato, Mushrooms, Onion, Bell Pepper</p>
+                            <h3>Mama's Garden Vegetarian</h3>
+                            <p>Black Olives, Onion, Bell Pepper, Mushrooms, Tomato</p>
+                           <h3>Bacon Double Cheeseburger</h3>
+                            <p>Cheddar and Mozzarella Cheese, Beef, Bacon</p>
+                            <h3>Barbecue Chicken Pizza</h3>
+                            <p>BBQ Sauce, Chicken, Mozzarella Cheese</p>
+                           <h3>Taco Pizza</h3>
+                            <p>Beef or Grilled Chicken, Salsa, Fresh Tomato, Lettuce, Cheddar and Mozzarella Cheese</p>
+                            <h3>Spinach Alfredo</h3>
+                            <p>Alfredo Sauce, Spinach, Mozzarella Cheese</p>
+                           <h3>Margarita</h3>
+                            <p>Extra Virgin Olive Oil, Fresh Garlic, Tomato, Basil, Mozzarella and Parmesan Cheese</p>
+                            <h3>Greek Mediterranean</h3>
+                            <p>Seasoned Chicken, Extra Virgin Olive Oil, Fresh Garlic, Sun Dried Tomatoes, Fresh Tomatoes, Black Olives, Onion, Spinach, Mediterranean Herbs, Mozzarella Cheese, topped with Crumbly Feta Cheese</p>
+                            <p>Small....<span class="price">$10.49</span> Medium....<span class="price">$13.49</span>
+                            Large....<span class="price">$15.49</span> X-Large....<span class="price">$18.49</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="kids_beverages" class="clearfix menu_section">
+                    <div class="left_column" id="kids">   
+                        <div class="menu_section_title"><h2>Kids Menu</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Spaghetti</h3>
+                            <p>With meat sauce or meatballs....<span class="price">$4.49</span></p>
+                            <h3>Pizza</h3>
+                            <p>Cheese....<span class="price">$4.49</span></p>
+                            <h3>Chicken Nuggets</h3>
+                            <p>5 pieces with chips....<span class="price">$3.49</span></p>
+                            <h3>Macaroni and Cheese</h3>
+                            <p><span class="price">$4.49</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column" id="beverages">
+                    <div class="menu_section_title"><h2>Beverages</h2></div>   
+                        <div class=" fifty right menu_section">
+                            <h3>Fountain Drink</h3>
+                            <p>Free Refills....<span class="price">$1.79</span></p>
+                            <h3>Coffee or Tea</h3>
+                            <p><span class="price">$1.79</span></p>
+                            <h3>Bottled Drink</h3>
+                            <p><span class="price">$1.79</span></p>
+                            <h3>2 Liter Drinks</h3>
+                            <p>For To Go Orders....<span class="price">$2.79</span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="desserts" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Desserts</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Cheesecake</h3>
+                            <p>New York, Chocolate, Strawberry....<span class="price">$2.99</span></p>
+                            <h3>CinniMias</h3>
+                            <p>Served With Icing....<span class="price">$4.99</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+        </div>   
+                </div>   
+            
+{% endblock %}

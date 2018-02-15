@@ -384,6 +384,8 @@ select{
     border: none;
     padding: 1%;
     box-sizing: border-box;
+    outline: none;
+     -webkit-appearance: 
 }
 
 textarea{
@@ -493,7 +495,7 @@ box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
     width: 60%;
     margin: 0 auto;
     padding: 2%;
-    
+    display: flex;
     min-height: 500px;
     background-color: white;
     -webkit-box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
@@ -511,16 +513,17 @@ box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
 }
 
 .quote{
-    border-style: double;
-    border-width: 4px;
-    border-color: black;
+    
     box-sizing: border-box;
-    padding: 10px 0px;
-    width: 80%;
-    margin-left: 10%;
+    padding: 20px 0px;
+    width: 100%;
     text-align: center;
     font-style: italic;
     font-size: 18px;
+    background-image: url("../img/banner2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: contain;
     
 }
 
@@ -531,7 +534,294 @@ box-shadow: -24px 25px 32px -26px rgba(153,153,153,1);
 
 .article_image{
     margin-left: 5%;
-    width: 45%;
-    margin-top: 20px;
     background-color: white;
+    background-image: url('../img/gallery4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-self: stretch;
+    width: 50%;
+    
 }
+
+.appetizer_image{
+    margin-left: 5%;
+    background-color: white;
+    background-image: url('../img/cheeseroll.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-self: stretch;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+#wrap{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#menu_wrap{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+.menu_section_title{
+    width: 100%;
+    background-color: #378E21;
+    color: white;
+    padding: 6px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.menu_section_title h2{
+    display: inline;
+    
+}
+.menu_section{
+    
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.menu_section h3 {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menu_section p{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.menu_section h3{
+    color: #871C16;
+}
+
+.price{
+    
+    font-weight: 600;
+}
+
+.left_column, .right_column{
+    width: 48%;
+    float: left;
+}
+
+.left_column{
+    margin-right: 2%;
+}
+
+.right_column{
+    margin-left: 2%;
+}
+
+.download{
+    background-color: #378E21;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    float: right;
+    box-sizing: border-box;
+    width: 25%;
+    margin: 0 auto;
+    
+}
+
+.download:hover{
+    cursor: pointer;
+}
+
+#menu_nav{
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+#menu_nav select{
+    border: solid 1px #378E21;
+    background-color: #fff;
+    color:#378E21;
+    padding: 8px;
+    outline: none;
+    width: 48%;
+}
+
+#appetizers{
+    display: flex;
+
+}
+
+#appetizers .right_column{
+    align-self: stretch;
+    background-image: url('../img/cheeseroll.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.left.menu_section{
+    padding-left: 15px;
+}
+
+#salads .right.menu_section{
+    padding-top: 50px;
+}
+
+#pastas{
+    display: flex;
+}
+
+#pastas .left.menu_section{
+  
+    padding-bottom: 50px;
+}
+
+#pastas .right_column{
+    align-self: stretch;
+    background-image: url('../img/pasta.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+    
+}
+
+#sandwiches{
+    display: flex;
+}
+
+#sandwiches .right_column{
+    align-self: stretch;
+    background-image: url('../img/sandwiches.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    
+    
+}
+
+#stromboli{
+    display: flex;
+}
+
+#stromboli .left_column{
+    padding-bottom: 10px;
+    
+}
+
+#stromboli .right_column{
+    align-self: stretch;
+    background-image: url('../img/calzone.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+#specialty_pizza{
+    display: flex;
+}
+
+#specialty_pizza .right_column{
+    align-self: stretch;
+    background-image: url('../img/gallery4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    
+    
+}
+
+#beverages .right{
+    padding-left:4%;
+    padding-top: 10px;
+}
+
+#desserts{
+    display: flex;
+}
+
+#desserts .left_column{
+    padding-bottom: 200px;
+}
+
+#desserts .right_column{
+    align-self: stretch;
+    background-image: url('../img/cheesecake.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#pizza_price, #pizza_toppings{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#pizza_price h3{
+    color: black;
+    margin-top: 10px;
+}
+
+
+#pizza h2, #pizza p{
+    margin-bottom: 0;
+    margin-left: 10%;
+    padding: 0;
+}
+
+
+
+#pizza_price h4{
+    color: #871C16;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: #871C16;
+    color: #871C16; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+    font-weight: 600;
+}
+
+#myBtn i{
+    color: white;
+    font-size: 40px;
+}
+
+

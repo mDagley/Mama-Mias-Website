@@ -1,0 +1,954 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Mama Mia's Pizzeria" />
+    <meta name="keywords" content="mama mia's pizzeria, pizza, anna tx, gunter tx, restaurant, local, texas, anna, gunter" />
+    <meta charset="UTF-8">
+    <title>Mama Mia's Pizzeria</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+</head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+        <div id="container">
+            
+        <!--HEADER-->
+        <header id="header">
+            <a href="index.html"><img src="img/banner.png" id="banner"></a>
+        </header>
+        
+        <!--NAVIGATION BAR-->
+        <nav id="navbar">
+            <ul class="nav">
+                <li class="nav"><a href="index.html" class="navbar" >HOME</a></li>
+                <li class="nav"><a href="menu.html" class="navbar" >MENU</a></li>
+                <li class="nav"><a href="locations.html" class="navbar" >LOCATIONS</a></li>
+                <li class="nav"><a href="about.html" class="navbar" >ABOUT</a></li>
+                <li class="nav"><a href="contact.html" class="navbar" >CONTACT</a></li>
+            </ul>
+       
+            <ul class="soc">
+                <li class="soc"><a href="https://www.facebook.com/mamamiasannatx/" class="navbar" target="_blank"><img src="img/fb.png" class="socico" id="fb"></a></li>
+                <li class="soc"><a href="placeholder.html" class="navbar" ><img src="img/t.png" class="socico" id="t"></a></li>
+                <li class="soc"><a href="placeholder.html" class="navbar" ><img src="img/ig.png" class="socico" id="ig"></a></li>
+                <li class="soc"><a href="https://goo.gl/maps/NowhcySHA9v" class="navbar" target="_blank"><img src="img/g.png" class="socico" id="g"></a></li>
+            </ul>
+        </nav>
+        
+        <!--BODY-->
+        <div id="body" class="clearfix">
+            <!-- You write code for this content block in another file -->
+            
+            <div id="wrap">
+            <h2>MENU</h2>
+            <div id="menu_wrap" class="clearfix">
+            <div id="menu_nav" class="clearfix">
+                <select name="section_select" class="medium" id="section_select">
+                <option selected disabled>MENU SECTION</option>
+                    <option value="#appetizers">APPETIZERS</option>
+                <option value="#salads">SALADS</option>
+                <option value="#sandwiches">SANDWICHES</option>
+                <option value="#pastas">PASTAS</option>
+                <option value="#stromboli">STROMBOLI &amp; CALZONES</option>
+                <option value="#pizza">PIZZA</option>
+                <option value="#specialty_pizza">SPECIALTY PIZZA</option>
+                <option value="#kids">KIDS</option>
+                <option value="#beverages">BEVERAGES</option>
+                <option value="#desserts">DESSERTS</option>
+                </select>
+                <a href="MamaMiaMenu.pdf" target="_blank"><button class="download">DOWNLOAD</button></a>
+            </div>
+            <div id="appetizers" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Appetizers</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Combo Platter</h3>
+                            <p>4 Mozzarella Sticks, 4 Wings, 4 Poppers, 4 Nuggets....<span class="price">$10.99</span></p>
+                            <h3>Cheese Rolls</h3>
+                            <p>Small....<span class="price">$6.99</span> Large....<span class="price">$10.99</span>
+                            Additional Toppings Small....<span class="price">$1.00</span> Large....<span class="price">$1.50</span></p>
+                            <h3>Garlic Cheese Toast</h3>
+                            <p><span class="price">$2.99</span></p>
+                            <h3>Buffalo Wings</h3>
+                            <p>Small(6)....<span class="price">$5.49</span> Large(12)....<span class="price">$9.99</span></p>
+                            <h3>Garlic Breadsticks</h3>
+                            <p>12 sticks....<span class="price">$5.99</span></p>
+                            <h3>Cheesy Garlic Breadsticks</h3>
+                            <p>8 sticks....<span class="price">$6.99</span></p>
+                            <h3>Jalapeno Poppers</h3>
+                            <p>8 pieces....<span class="price">$5.99</span></p>
+                            <h3>Chicken Nuggets</h3>
+                            <p>10 pieces....<span class="price">$5.99</span></p>
+                            <h3>Mozzarella Sticks</h3>
+                            <p>8 pieces....<span class="price">$5.99</span></p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="salads" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Salads</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Dinner Salad</h3>
+                            <p>Small....<span class="price">$2.49</span> Large....<span class="price">$3.49</span></p>
+                            <h3>Grilled Chicken Salad</h3>
+                            <p><span class="price">$6.99</span></p>
+                            <h3>Chef Salad</h3>
+                            <p>With Pepperoni and Canadian Bacon....<span class="price">$6.99</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        <div class=" fifty right menu_section">
+                            <h3>Caesar Salad</h3>
+                            <p>Small....<span class="price">$3.49</span> Large....<span class="price">$4.49</span></p>
+                            <h3>Chicken Caesar Salad</h3>
+                            <p><span class="price">$6.99</span></p>
+                            <p>All salads are served with your choice of dressing: 
+                            Ranch, Light Ranch, Blue Cheese, 1000 Island, Creamy Italian, Honey Mustard, Caesar</p>
+                            <p>*Additional dressing or sauce $0.50</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pastas" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Pastas</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Lasagna</h3>
+                            <p>with or without meat sauce</p>
+                            <h3>Manicoti</h3>
+                            <p></p>
+                            <h3>Chicken Spinach Alfredo</h3>
+                            <p>with fettuccine, grilled chicken, spinach, and mushrooms</p>
+                            <h3>Eggplant Parmesan</h3>
+                            <p></p>
+                            <h3>Spaghetti</h3>
+                            <p>with meat sauce or meatballs</p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+
+                <div id="sandwiches" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Sandwiches</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Hot Ham and Cheese</h3>
+                            <p>Ham, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Pepperoni Sub</h3>
+                            <p>Pepperonia, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Meatball Sub</h3>
+                            <p>Seasoned Meatballs, Mozzarella Cheese, Marinara Sauce</p>
+                            <h3>Submarine Sub</h3>
+                            <p>Pepperoni, Ham, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>All Meat Sub</h3>
+                            <p>Pepperoni, Ham, Beef, Bacon, Sausage, Mozzarella and Cheddar Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Grilled Chicken Sub</h3>
+                            <p>Grilled Chicken, Onion, Bell Pepper, Mushrooms, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Philly Cheese Steak Sub</h3>
+                            <p>Steak, Grilled Onions, Bell Pepper, Mushrooms, Mozzarella Cheese, Lettuce, Tomato, Italian Dressing</p>
+                            <h3>Gyro</h3>
+                            <p>Lamb Meat, Grilled Onions, Cucumbers, Ranch Dressing, Wrapped in Pita Bread</p>
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="stromboli" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Stromboli &amp; Calzones</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Stromboli</h3>
+                            <p>Stuffed Pizza Crust, Mozzarella Cheese, Sausage, Canadian Bacon, Pepperoni, Beef &#40;Sauce inside&#41;</p>
+                           <h3>Calzone</h3>
+                            <p>Stuffed Pizza Crust, Mozzarella Cheese, Sausage, Canadian Bacon, Pepperoni, Beef &#40;No sauce inside&#41;</p>
+                            <p>Small....<span class="price">$10.49</span> Medium....<span class="price">$12.49</span>
+                            Large....<span class="price">$14.49</span> X-Large....<span class="price">$16.49</span></p>
+                            <img src="img/calzone_banner.jpg">
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="pizza" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Pizza</h2></div>   
+                        
+                </div>
+                    <table id="pizza_price">
+                        <tr>
+                           <td></td> 
+                            <td><h3>SMALL</h3></td>
+                            <td><h3>MEDIUM</h3></td>
+                            <td><h3>LARGE</h3></td>
+                            <td><h3>X-LARGE</h3></td>
+                        </tr>
+                        <tr>
+                           <td><h4>1 TOPPING</h4></td> 
+                            <td>$7.99</td>
+                            <td>$10.49</td>
+                            <td>$12.99</td>
+                            <td>$15.49</td>
+                        </tr>
+                        <tr>
+                           <td><h4>2 TOPPING</h4></td> 
+                            <td>$8.99</td>
+                            <td>$11.49</td>
+                            <td>$13.99</td>
+                            <td>$16.49</td>
+                        </tr>
+                        <tr>
+                           <td><h4>3 TOPPING</h4></td> 
+                            <td>$9.99</td>
+                            <td>$12.49</td>
+                            <td>$14.99</td>
+                            <td>$17.49</td>
+                        </tr>
+                        <tr>
+                            <td><h4>ADDITIONAL</h4></td> 
+                            <td>$1.00</td>
+                            <td>$1.25</td>
+                            <td>$1.50</td>
+                            <td>$1.75</td>
+                        </tr>
+                    </table>
+                    <h2>Toppings</h2>
+                    <table id="pizza_toppings">
+                        <tr>
+                           <td><h3>Sauce</h3></td> 
+                            <td><h3>Cheese</h3></td>
+                            <td><h3>Meat</h3></td>
+                            <td colspan="2"><h3>Vegetables</h3></td>
+                            
+                        </tr>
+                        <tr>
+                           <td>*Alfredo</td> 
+                            <td>Mozzarella</td>
+                            <td>Bacon</td>
+                            <td>Bell Pepper</td>
+                            <td>Green Olives</td>
+                        </tr>
+                        <tr>
+                           <td>*BBQ</td> 
+                            <td>Cheddar</td>
+                            <td>Beef</td>
+                            <td>Spinach</td>
+                            <td>Jalapeno</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Chicken</td>
+                            <td>Onion</td>
+                            <td>Mushroom</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Canadian Bacon</td>
+                            <td>Pineapple</td>
+                            <td>Tomato</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Pepperoni</td>
+                            <td>Sundried Tomatoes</td>
+                            <td>Fresh Garlic</td>
+                        </tr>
+                        <tr>
+                           <td></td> 
+                            <td></td>
+                            <td>Sausage</td>
+                            <td>Black Olives</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p>*Indicates two toppings</p>
+                </div>
+                <div id="specialty_pizza" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Specialty Pizza</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Mama's Deluxe &#40;The Works&#41;</h3>
+                            <p>Pepperoni, Canadian Bacon, Beef, Sausage, Green Pepper, Mushroooms, Black Olives, Onion</p>
+                           <h3>Mama's All Meat Combo</h3>
+                            <p>Pepperoni, Bacon, Sausage, Beef, Candian Bacon, Cheddar and Mozzarella Cheese</p>
+                            <h3>Chicken Vegetable Supreme</h3>
+                            <p>Grilled Chicken, Mushrooms, Tomato, Onion, Bell Pepper</p>
+                           <h3>Chicken Alfredo Supreme</h3>
+                            <p>Alfredo Sauce, Grilled Chicken, Tomato, Mushrooms, Onion, Bell Pepper</p>
+                            <h3>Mama's Garden Vegetarian</h3>
+                            <p>Black Olives, Onion, Bell Pepper, Mushrooms, Tomato</p>
+                           <h3>Bacon Double Cheeseburger</h3>
+                            <p>Cheddar and Mozzarella Cheese, Beef, Bacon</p>
+                            <h3>Barbecue Chicken Pizza</h3>
+                            <p>BBQ Sauce, Chicken, Mozzarella Cheese</p>
+                           <h3>Taco Pizza</h3>
+                            <p>Beef or Grilled Chicken, Salsa, Fresh Tomato, Lettuce, Cheddar and Mozzarella Cheese</p>
+                            <h3>Spinach Alfredo</h3>
+                            <p>Alfredo Sauce, Spinach, Mozzarella Cheese</p>
+                           <h3>Margarita</h3>
+                            <p>Extra Virgin Olive Oil, Fresh Garlic, Tomato, Basil, Mozzarella and Parmesan Cheese</p>
+                            <h3>Greek Mediterranean</h3>
+                            <p>Seasoned Chicken, Extra Virgin Olive Oil, Fresh Garlic, Sun Dried Tomatoes, Fresh Tomatoes, Black Olives, Onion, Spinach, Mediterranean Herbs, Mozzarella Cheese, topped with Crumbly Feta Cheese</p>
+                            <p>Small....<span class="price">$10.49</span> Medium....<span class="price">$13.49</span>
+                            Large....<span class="price">$15.49</span> X-Large....<span class="price">$18.49</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+                <div id="kids_beverages" class="clearfix menu_section">
+                    <div class="left_column" id="kids">   
+                        <div class="menu_section_title"><h2>Kids Menu</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Spaghetti</h3>
+                            <p>With meat sauce or meatballs....<span class="price">$4.49</span></p>
+                            <h3>Pizza</h3>
+                            <p>Cheese....<span class="price">$4.49</span></p>
+                            <h3>Chicken Nuggets</h3>
+                            <p>5 pieces with chips....<span class="price">$3.49</span></p>
+                            <h3>Macaroni and Cheese</h3>
+                            <p><span class="price">$4.49</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column" id="beverages">
+                    <div class="menu_section_title"><h2>Beverages</h2></div>   
+                        <div class=" fifty right menu_section">
+                            <h3>Fountain Drink</h3>
+                            <p>Free Refills....<span class="price">$1.79</span></p>
+                            <h3>Coffee or Tea</h3>
+                            <p><span class="price">$1.79</span></p>
+                            <h3>Bottled Drink</h3>
+                            <p><span class="price">$1.79</span></p>
+                            <h3>2 Liter Drinks</h3>
+                            <p>For To Go Orders....<span class="price">$2.79</span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="desserts" class="clearfix menu_section">
+                    <div class="left_column">   
+                        <div class="menu_section_title"><h2>Desserts</h2></div>   
+                        <div class=" fifty left menu_section">
+                            <h3>Cheesecake</h3>
+                            <p>New York, Chocolate, Strawberry....<span class="price">$2.99</span></p>
+                            <h3>CinniMias</h3>
+                            <p>Served With Icing....<span class="price">$4.99</span></p>
+                            
+                        </div>
+                        </div>
+                    <div class="right_column">
+                        
+                    </div>
+                </div>
+                
+        </div>   
+                </div>   
+            
+
+
+        </div>
+              
+   
+        <!--FOOTER-->
+        <footer>
+            <div id="footer_content" class="clearfix">
+                
+                <div id="leftnav">
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="menu.html"><li>Menu</li></a>
+                        <a href="locations.html"><li>Locations</li></a>
+                    </ul>
+                </div>
+                
+                <div id="rightnav">
+                    <ul>
+                        <a href="about.html"><li>About Us</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                        <a href="placeholder.html"><li>Terms &amp; Conditions</li></a>
+                    </ul>
+                </div>
+                
+                <div id="newsletter">
+                    <br />
+                    <p>Subscribe to our newsletter</p>
+                    <form>
+                        <input type="email" name="email" value="Email Address" id="newsletter_email_input">
+                        <input type="submit" value="OK" id="ok">
+                    </form>
+                </div>
+                
+                <div class="location">
+                    <p>Anna, TX</p>
+                    <p>203 W. Fourth Street</p>
+                    <p>(972) 924-2400</p>
+                </div>
+
+                 <div class="location">
+                     <p>Gunter, TX</p>
+                    <p>610 N. 8th Street</p>
+                    <p>(903) 433-1700</p>
+                </div>
+                
+            </div>
+            
+            <div id="copyright">
+            <p>This is a concept website &copy; Melissa Dagley 2018. This website is in no way affiliated with Mama Mia's Pizzeria.</p>
+            </div>
+    
+
+        </footer>
+        </div>
+        
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/menu_selection.js"></script>
+    <script src="js/scroll_top.js"></script>
+    <script type='text/javascript' src="js/gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>   
+    <!-- Form Validation plugin found at http://www.formvalidator.net/index.html -->
+    <script>
+  $.validate({
+    
+  });
+</script>
+
+<script>
+      function initMap() {
+         var latlng = new google.maps.LatLng(33.348901, -96.550318);
+    var latlng2 = new google.maps.LatLng(33.452242, -96.740800);
+    
+
+    var myOptions =
+    {
+        zoom: 19,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+            {"elementType": "geometry", "stylers": [{"color": "#ebe3cd"}]},
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#523735"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#c9b2a6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#dcd2be"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ae9e90"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#93817c"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#b00606"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#a5b076"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#447530"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#fdfcf8"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f8c967"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#e9bc62"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e98d58"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#db8555"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#806b63"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8f7d77"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#ebe3cd"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#b9d3c2"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#92998d"
+      }
+    ]
+  }
+]
+    };
+
+    var myOptions2 =
+    {
+        zoom: 18,
+        center: latlng2,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+            {"elementType": "geometry", "stylers": [{"color": "#ebe3cd"}]},
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#523735"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#c9b2a6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#dcd2be"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ae9e90"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#93817c"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#b00606"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#a5b076"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#447530"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#fdfcf8"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f8c967"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#e9bc62"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e98d58"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#db8555"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#806b63"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8f7d77"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#ebe3cd"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#b9d3c2"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#92998d"
+      }
+    ]
+  }
+]
+    };
+
+
+    var map = new google.maps.Map(document.getElementById("annaMap"), myOptions);
+
+    var map2 = new google.maps.Map(document.getElementById("gunterMap"), myOptions2);
+
+
+    var myMarker = new google.maps.Marker(
+    {
+        position: latlng,
+        map: map,
+        title:"Anna"
+   });
+
+    var myMarker2 = new google.maps.Marker(
+    {
+        position: latlng2,
+        map: map2,
+        title:"Gunter"
+    });
+
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYgj-TcnEga2OrplXg_SPPE2PhOhO_aJk&callback=initMap">
+    </script>
+    </body>
+
+</html>
